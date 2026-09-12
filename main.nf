@@ -29,7 +29,7 @@ process COUNT_WORDS {
     """
     wc -w < ${words} | tr -d ' ' > count.txt
     echo "Sample: ${meta.id}" > ${meta.id}_summary.txt
-    echo "Total words: \$(cat count.txt)" >> ${meta.id}_summary.txt
+    echo "Word count: \$(cat count.txt)" >> ${meta.id}_summary.txt
     """
 }
 
