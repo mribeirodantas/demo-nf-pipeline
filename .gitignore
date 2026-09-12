@@ -1,0 +1,7 @@
+.nextflow/
+.nextflow.log*
+work/
+results/
+baseline-results/
+pr-results/
+nf-diff-report.*
