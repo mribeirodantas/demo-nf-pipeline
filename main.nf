@@ -11,7 +11,7 @@ process SPLIT_WORDS {
 
     script:
     """
-    echo "${text}" | tr ' ' '\\n' | sed '/^$/d' > words.txt
+    echo "${text}" | tr ' ' '\\n' | grep -v '^\$' > words.txt
     """
 }
 
