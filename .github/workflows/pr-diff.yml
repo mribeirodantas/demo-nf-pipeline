@@ -39,8 +39,6 @@ jobs:
           setup-java: 'false'
           setup-nextflow: 'false'
           last: 'true'
-          published-a: baseline-results
-          published-b: pr-results
           format: md
           comment-pr: 'true'
           upload-artifact: 'true'
