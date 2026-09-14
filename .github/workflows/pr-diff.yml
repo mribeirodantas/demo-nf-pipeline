@@ -23,6 +23,7 @@ jobs:
         with:
           path: |
             .nextflow
+            .lineage
             baseline-results
           key: nf-baseline-${{ github.sha }}
           restore-keys: |
@@ -41,6 +42,7 @@ jobs:
           last: 'true'
           published-a: baseline-results
           published-b: pr-results
+          diff-dag: 'true'
           format: md
           comment-pr: 'true'
           upload-artifact: 'true'
