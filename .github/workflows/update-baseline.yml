@@ -23,5 +23,6 @@ jobs:
         with:
           path: |
             .nextflow
+            .lineage
             baseline-results
           key: nf-baseline-${{ github.sha }}
